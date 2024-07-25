@@ -74,7 +74,7 @@ const SignUp = () => {
                     </form>
                     <div>
                         <p className='text-sm text-greyDarkest w-fit mx-auto mt-4'>
-                            Don't have an account? <Link href={'/sign-up'} className='text-deepBlue'>Create Account</Link>
+                            Don&apos;t have an account? <Link href={'/sign-up'} className='text-deepBlue'>Create Account</Link>
                         </p>
                     </div>
                 </div>

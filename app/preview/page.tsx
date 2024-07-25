@@ -75,7 +75,7 @@ const PreviewWrapper: React.FC = () => {
         lastname: data.lastname,
         email: data.email
       }));
-  }, [userEmail])
+  }, [userId, details])
   
   
   return <Preview links={links} details={details}/>;

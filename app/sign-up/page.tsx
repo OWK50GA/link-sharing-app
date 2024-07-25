@@ -51,7 +51,7 @@ const SignUp = () => {
             <div className='w-unset md:w-[450px] mx-auto mt-14 bg-normalWhite p-10 rounded-lg'>
                 <div className='flex flex-col gap-2'>
                     <h2 className='font-bold text-2xl'>Create Account</h2>
-                    <p className='text-sm text-greyDarkest'>Let's get you started sharing your links</p>
+                    <p className='text-sm text-greyDarkest'>Let&apos;s get you started sharing your links</p>
                 </div>
                 <div className='mt-7'>
                     <form className='flex flex-col gap-5' onSubmit={handleSubmit(handleSignUp)}>
