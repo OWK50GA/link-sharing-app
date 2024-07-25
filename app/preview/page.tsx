@@ -1,6 +1,5 @@
 'use client'
 
-import { GetStaticProps } from 'next';
 import React, { useEffect, useState } from 'react';
 import { fetchUserLinks, fetchUserDetails } from '@/utils/firestoreService';
 import { useAuth } from '../hooks/useAuth';
@@ -18,9 +17,12 @@ interface UserDetail {
   email: string,
 }
 
-// type UserLinks = UserLink[]
+type Props = {
+  links: UserLink[],
+  details: UserDetail
+}// type UserLinks = UserLink[]
 
-const Preview: React.FC<{ links: UserLink[], details: UserDetail }> = ({ links, details }) => {
+const Preview = ({ links, details }: Props) => {
 
   console.log(links, 'links')
   console.log(details, 'detail')
