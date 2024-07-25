@@ -20,7 +20,7 @@ interface UserDetail {
 type Props = {
   links: UserLink[],
   details: UserDetail
-}// type UserLinks = UserLink[]
+}
 
 const Preview = ({ links, details }: Props) => {
 
@@ -59,6 +59,8 @@ const Preview = ({ links, details }: Props) => {
   );
 };
 
+export const revalidate = 60
+
 const PreviewWrapper: React.FC = () => {
   const {userEmail} = useAuth()
   const [links, setLinks] = useState([])
@@ -83,7 +85,4 @@ const PreviewWrapper: React.FC = () => {
 
 export default PreviewWrapper;
 
-export const config = {
-  revalidate: 60, 
-};
 
