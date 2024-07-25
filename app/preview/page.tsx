@@ -5,6 +5,7 @@ import { fetchUserLinks, fetchUserDetails } from '@/utils/firestoreService';
 import { useAuth } from '../hooks/useAuth';
 import PreviewNavBar from './PreviewNavBar';
 
+
 interface UserLink {
     platform: string,
     url: string;
@@ -82,8 +83,3 @@ const PreviewWrapper: React.FC = () => {
 };
 
 export default PreviewWrapper;
-
-export const config = {
-  revalidate: 60, 
-};
-
